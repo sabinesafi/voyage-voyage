@@ -7,5 +7,23 @@
 	</head>
 	<body>
 		<h1>Saisissez votre destination :</h1>
+			
+			  Ville de départ :<br>
+			  <input type="text" name="depart" id="depart"><br>
+			  Ville d'arrivée :<br>
+			  <input type="text" name="arrivee" id="arrivee">
+			  <br>
+			  <button id="btn-GO" onclick="test()" value="3">GO</button>
+			
+
+<script type="text/javascript">
+	const test = () => {
+		const depart = document.getElementById('depart').value
+		const arrivee = document.getElementById('arrivee').value
+		alert("depart : " + depart + " ; arrivée : " + arrivee)
+	}
+</script>
+
+
 	</body>
 </html>
