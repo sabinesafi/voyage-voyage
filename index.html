@@ -18,19 +18,27 @@
 			  <input type="text" name="date-depart" id="date-depart"><br>
 			  Date de retour :<br>
 			  <input type="text" name="date-retour" id="date-retour"><br>
-			  <button id="btn-GO" onclick="test()" value="3">GO</button>
+			  <button id="btn-GO">GO</button>
 			
-		<script type="text/javascript">
-
-<<<<<<< HEAD
 <script type="text/javascript">
 	const test = () => {
 		const depart = document.querySelector('#depart').value
 		const arrivee = document.querySelector('#arrivee').value
 		const dateDepart = document.querySelector('#date-depart').value
 		const dateRetour = document.querySelector('#date-retour').value
-		alert("départ : " + depart + " ; arrivée : " + arrivee + " du : " + dateDepart + " au : " + dateRetour)
+		alert(`départ : ${depart} ; arrivée : ${arrivee} ; du : ${dateDepart} ; au : ${dateRetour}`)
+		//alert("départ : " + depart + " ; arrivée : " + arrivee + " du : " + dateDepart + " au : " + dateRetour)
 	}
+
+	//fonctionnerait aussi
+	//document.addEventListener('DOMContentLoaded' , () => {
+	//		document.querySelector('#btn-GO').setAttribute('onClick', "test()")
+	//})
+
+	document.addEventListener('DOMContentLoaded' , () => {
+			document.querySelector('#btn-GO').addEventListener('click', test )
+	})
+	
 </script>
 
 	</body>
