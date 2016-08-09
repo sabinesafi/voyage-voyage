@@ -3,6 +3,8 @@
 	  <meta charset="utf-8">
 		<title>Ou Voyager ?</title>
 		<meta descr="Envie de voyager, dites nous ou vous voulez aller.">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 		<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
 	</head>
 	<body>
@@ -11,19 +13,25 @@
 			  Ville de départ :<br>
 			  <input type="text" name="depart" id="depart"><br>
 			  Ville d'arrivée :<br>
-			  <input type="text" name="arrivee" id="arrivee">
-			  <br>
+			  <input type="text" name="arrivee" id="arrivee"><br>
+			  Date de départ :<br>
+			  <input type="text" name="date-depart" id="date-depart"><br>
+			  Date de retour :<br>
+			  <input type="text" name="date-retour" id="date-retour"><br>
 			  <button id="btn-GO" onclick="test()" value="3">GO</button>
 			
+		<script type="text/javascript">
 
+<<<<<<< HEAD
 <script type="text/javascript">
 	const test = () => {
 		const depart = document.querySelector('#depart').value
 		const arrivee = document.querySelector('#arrivee').value
-		alert("depart : " + depart + " ; arrivée : " + arrivee)
+		const dateDepart = document.querySelector('#date-depart').value
+		const dateRetour = document.querySelector('#date-retour').value
+		alert("départ : " + depart + " ; arrivée : " + arrivee + " du : " + dateDepart + " au : " + dateRetour)
 	}
 </script>
-
 
 	</body>
 </html>
