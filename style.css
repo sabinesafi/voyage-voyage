@@ -1,0 +1,46 @@
+h1 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 45px;
+	text-align: center;
+	margin-top: 2%;
+}
+
+p {
+	font-family: Arial;
+	margin-bottom: 5px;
+}
+
+input {
+	border: 1px solid grey;
+	padding: 5 3 5 3;
+}
+
+button {
+	background-color: #01516d ;
+	color: white;
+	font-size: 16px;
+	padding: 5 10 5 10;
+	margin-top: 15px;
+	border-radius: 2px;
+	border: none;
+	width: 200px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+#main {
+	width: 500px;
+	background-color: lightblue;
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	margin-left: -250px;
+	text-align: center;
+	padding: 20px;
+}
+
+div > div {
+	display: inline-block;
+	text-align: left;
+	margin: 0 10 0 10;
+}
